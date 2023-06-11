@@ -160,7 +160,7 @@ h2 {
 /* --------------------------------- Footer --------------------------------- */
 
 .site-footer {
-    padding: 1em 0;
+    padding: 1.2em 0;
     background-color: #252525;
 }
 
@@ -168,4 +168,5 @@ h2 {
     font-size: .85rem;
     color: #AAAAAA;
     text-align: center;
+    margin: 0;
 }
