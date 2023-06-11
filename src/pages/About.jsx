@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import aboutPageImg from "../images/about.png";
 
 const About = () => {
@@ -23,7 +24,9 @@ const About = () => {
                     Your van is ready.
                 </h2>
 
-                <button className="btn btn-secondary">Explore our vans</button>
+                <button className="btn btn-secondary">
+                    <Link to="/vans">Explore our vans</Link>
+                </button>
             </div>
         </div>
     </div>
