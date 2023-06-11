@@ -1,9 +1,10 @@
 import React from "react";
+import aboutPageImg from "../../public/images/about.png";
 
 const About = () => {
   return (
     <div className="about">
-        <img className="about-page-img" src="/public/images/about.png" alt="about me" />
+        <img className="about-page-img" src={aboutPageImg} alt="about me" />
         <div className="container container-about">
             <h1 className="about-title">
                 Don't squeeze in a sedan when
