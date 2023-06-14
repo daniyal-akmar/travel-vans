@@ -63,18 +63,24 @@ h2 {
     color: #000;
 }
 
+
 /* ------------------------------- Navigation ------------------------------- */
 
 .site-nav a {
     font-weight: 600;
     font-size: 1.05rem;
-    margin-left: 1em;
+    margin-left: 1.5em;
     color: #4D4D4D;
     border-bottom: 2px solid none;
     text-decoration: none;
 }
 
 .site-nav a:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+a.active-link {
     color: #000;
     border-bottom: 2px solid #000;
 }
@@ -107,6 +113,7 @@ h2 {
 
 .about {
     background-color: #FFF7ED;
+    flex-grow: 1;
 }
 
 .container-about {
@@ -244,6 +251,151 @@ h2 {
     font-weight: 700;
 }
 
+/* ---------------------------------- Host ---------------------------------- */
+
+.host {
+    flex-grow: 1;
+}
+
+.host-nav {
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.host-nav a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #4D4D4D;
+    border-bottom: 2px solid none;
+}
+
+.host-nav a:focus,
+.host-nav a:hover {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.host-nav a.active-link {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+@media (min-width: 500px) {
+    .host-nav {
+        display: block;
+    }
+
+    .host-nav a {
+        margin-right: 2em;
+    }
+}
+
+/* -------------------------------- Host Vans Tab -------------------------------- */
+
+.vans-tab {
+    margin-bottom: 4rem;
+}
+
+.vans-tab-link {
+    color: #161616;
+    text-decoration: none;
+}
+
+.vans-tab-card {
+    background-color: #fff;
+    padding: 1.25em 1.85em;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.vans-tab-card img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.vans-tab-card h3,
+.vans-tab-card p {
+    margin: 0;
+    margin-bottom: .05em;
+}
+
+/* ----------------------------- Host Van Detail ---------------------------- */
+
+.host-van-detail {
+    background: #fff;
+    border-radius: 5px;
+    padding: 1.5em;
+    margin-bottom: 4rem;
+}
+
+.host-van-detail-tabs {
+    margin-bottom: 1.5em;
+}
+
+.host-van-detail-tabs a {
+    text-decoration: none;
+    color: #4D4D4D;
+    margin-right: 1.5em;
+    border-bottom: 2px solid none;
+}
+
+.host-van-detail-tabs .tab {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.host-van-detail-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.host-van-detail-container img {
+    max-width: 140px;
+    border-radius: 3px;
+}
+
+.host-van-detail-container h2, 
+.host-van-detail-container p {
+    margin: 0;
+    margin-bottom: .15em;
+}
+
+.host-van-detail-container p {
+    font-weight: 800;
+    font-size: 1.15rem;
+}
+
+.host-van-detail-container p span {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.back-link-container {
+    color: #858585;
+    margin-bottom: 1.5rem;
+}
+
+.back-link-container span {
+    margin-right: .5em;
+    font-weight: 700;
+}
+
+.back-link {
+    color: #000;
+    margin-bottom: 2rem;
+}
+
 /* --------------------------------- Buttons -------------------------------- */
 
 .btn {
@@ -276,6 +428,8 @@ h2 {
 .btn-simple,
 .btn-rugged,
 .btn-luxury {
+    position: relative;
+    top: -12px;
     font-size: 0.875rem;
     font-weight: 600;
     text-transform: capitalize;

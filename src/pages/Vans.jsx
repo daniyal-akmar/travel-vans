@@ -11,7 +11,7 @@ const Vans = () => {
             .then((data) => setVans(data.vans));
     }, []);
 
-    console.log(vans);
+    // console.log(vans);
 
     return (
         <div className="vans-page">
